@@ -55,7 +55,6 @@ body {
     list-style: none; /* List formatting */
 }
 
-/* Base style for all regular menu links - Clean, Bold, All Caps Sans-Serif */
 .custom-nav li a {
     font-family: 'Black Ops One', cursive !important;
     font-weight: 500;
@@ -89,16 +88,16 @@ body {
 .custom-nav li a::before {
     content: '';
     position: absolute;
-    bottom: 5px; /* Positioned just under the text */
-    left: 50%; /* Starts perfectly in the center */
-    transform: translateX(-50%); /* Keeps it centered as it grows */
-    width: 0; /* Starts hidden */
-    height: 2px; /* Small, thin thickness */
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
     background: linear-gradient(135deg, #D300B0 0%, #D354E4 14%, #7A80EF 46%, #38A0F7 72%, #0FB4FD 90%, #00BCFF 100%);
     transition: width 0.3s ease; /* Smooth animation */
     border-radius: 2px;
 }
-/* The solid cyan underline line with pink glow effect below */
+
 .custom-nav li.active a::after {
     content: '';
     position: absolute;
@@ -236,7 +235,7 @@ body {
 .screen-height-wrapper {
     display: flex;
     flex-direction: column;
-    /* height: 100vh; Exactly 100% of the screen height */
+
     width: 100%;
     overflow: hidden;
 }
@@ -251,10 +250,11 @@ body {
 }
 
 .hero-section {
+    height: 100vh;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: auto;
     padding: 0;
     margin: 0;
 }
