@@ -255,7 +255,7 @@ body {
 .nganh-item {
     display: flex;
     align-items: center;
-    height: 85px;
+    height: 130px;
     position: relative;
     background: transparent;
     border: none;
@@ -282,7 +282,7 @@ body {
 }
 
 .nganh-item img {
-    max-height: 70px;
+    max-height: 90px;
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
     z-index: 2;
 }
@@ -291,7 +291,7 @@ body {
     flex: 1;
     color: #ffffff;
     font-family: 'Black Ops One', cursive;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     margin: 0;
     text-transform: uppercase;
