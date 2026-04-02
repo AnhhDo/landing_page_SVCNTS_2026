@@ -176,11 +176,7 @@
     z-index: 5;
     max-height: 300px;
     width: 100%;
-
-    /* Changed from 'cover' to 'contain' to stop the cropping */
     object-fit: contain;
-
-    /* Keeps the character anchored to the bottom of the card */
     object-position: bottom center;
 }
 
