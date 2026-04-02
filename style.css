@@ -70,14 +70,13 @@ body {
     position: relative;
 }
 
-/* Hover state for navigation links with diagonal gradient text */
-.custom-nav li a:hover {
+
+.custom-nav li:not(:has(.btn-group)) a:hover {
     background: linear-gradient(135deg, #D300B0 0%, #D354E4 14%, #7A80EF 46%, #38A0F7 72%, #0FB4FD 90%, #00BCFF 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent !important;
 }
-
 /* =========================================
    ACTIVE MENU ITEM STYLING (Active state)
    ========================================= */
@@ -143,6 +142,7 @@ body {
 .angle-cut-btn:hover {
     transform: translateY(-2px);
     filter: brightness(1.1);
+    color: linear-gradient(135deg, #D300B0 0%, #D354E4 14%, #7A80EF 46%, #38A0F7 72%, #0FB4FD 90%, #00BCFF 100%);
     box-shadow: 0 6px 20px rgba(224, 39, 255, 0.6);
 }
 /* Global Glowing Title */
