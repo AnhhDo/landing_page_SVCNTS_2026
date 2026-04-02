@@ -236,7 +236,7 @@ body {
 .screen-height-wrapper {
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Exactly 100% of the screen height */
+    /* height: 100vh; Exactly 100% of the screen height */
     width: 100%;
     overflow: hidden;
 }
