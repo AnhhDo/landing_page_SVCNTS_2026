@@ -215,22 +215,22 @@ body {
     align-items: center;
 }
 
-/* =========================================
-   HERO SECTION
-   ========================================= */
 .hero-section {
     padding-top: 0;
 }
 
 .full-width-banner {
     width: 100%;
-    padding-top: 0;
+    padding-top: 0px;
+    overflow: hidden;
 }
 
 .full-width-banner img {
     width: 100%;
+    height: 100%;
     display: block;
     object-fit: cover;
+    object-position: center;
 }
 
 /* =========================================
@@ -1018,4 +1018,8 @@ select.custom-control option {
 
   height: auto;
   display: block;
+}
+
+.team-section {
+    margin-top: 50px;
 }
