@@ -13,15 +13,17 @@ function toggleDetails(element) {
             spaceBetween: 60,
             slidesPerGroup: 1,
             loop: true,       // Infinite looping
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
             speed: 400,       // Transition speed
 
-            // Link to your Arrow Buttons in the HTML
             navigation: {
                 nextEl: ".team-carousel .swiper-next",
                 prevEl: ".team-carousel .swiper-prev",
             },
 
-            // Responsive Breakpoints (How many cards to show on smaller screens)
             breakpoints: {
                 // Mobile phones (320px and up)
                 320: {
@@ -40,8 +42,6 @@ function toggleDetails(element) {
             }
         });
 
-        // 2. Player Details Popup Modal (VenoBox)
-        // This targets the `<a class="menu-inline">` links in your HTML
         new VenoBox({
             selector: '.menu-inline',
             bgcolor: '#1b0e22',
