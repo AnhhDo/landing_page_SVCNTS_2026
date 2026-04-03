@@ -723,6 +723,18 @@ a.venobox:focus {
     color: white;
 }
 
+/*font chu the cac chuyen gia*/
+.team-content h3 {
+    font-family: 'Oswald';
+}
+
+.team-content h4 {
+    font-family: 'Oswald';
+    font-size: 13px;
+    padding: 20px;
+    text-align: center;
+}
+
 /* =========================================
    ĐĂNG KÝ (FORM) SECTION
    ========================================= */
@@ -1074,6 +1086,10 @@ select.custom-control option {
     .quyen-loi-card {
         width: calc(50% - 20px);
     }
+
+    .timeline-item.left .timeline-box {
+        margin-left: 0
+    }
 }
 
 @media (max-width: 768px) {
@@ -1104,9 +1120,11 @@ select.custom-control option {
     }
 
     .quyen-loi-card {
-        width: 100%;
+        width: 80%;
         max-width: 400px;
-        margin-top: 40px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .timeline-line {
@@ -1134,20 +1152,23 @@ select.custom-control option {
         left: 35px;
         content: "\00BB";
     }
-}
 
-.team-content h3 {
-    font-family: 'Oswald';
-}
-
-.team-content h4 {
-    font-family: 'Oswald';
-    font-size: 13px;
-    padding: 20px;
-    text-align: center;
+    .timeline-item.left .timeline-box {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 576px) {
+    .title-glow {
+        font-size: 28px;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .small-title {
+        font-size: 22px
+    }
+
     .nganh-item h3 {
         font-size: 14px;
     }
@@ -1176,6 +1197,10 @@ select.custom-control option {
         width: 100%;
         text-align: center;
         margin-top: 10px;
+    }
+
+    .timeline-item.left .timeline-box {
+        margin-left: 0;
     }
 }
 

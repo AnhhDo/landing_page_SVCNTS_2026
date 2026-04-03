@@ -354,17 +354,15 @@
     }
 
     .team-content h3 {
-        justify-content: flex-start;
         padding-left: 20px;
         width: 100%;
     }
 
     .team-content h4 {
-        justify-content: flex-start;
-        padding-left: 20px;
+        padding-left: 10px;
         width: 95%;
-        margin-left: 10px;
-        text-align: left !important;
+        margin-left: 0px;
+        text-align: center !important;
     }
 }
 
@@ -578,5 +576,9 @@
 
     .player-details .team-details-wrap {
         grid-template-columns: 1fr;
+    }
+
+    .team-content h3,h4{
+        text-align: center;
     }
 }
