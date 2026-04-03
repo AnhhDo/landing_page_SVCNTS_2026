@@ -73,12 +73,13 @@
 
 .team-content h3 {
     background: #FCB813;
+    color: #ffffff;
     background: linear-gradient(to right bottom, #FCB813, #e027ff, #c534ff, #a93eff, #8a44ff, #6560ff, #3c73ff, #0081ff, #009cff, #00b3ff, #00c6f5, #0cd7e8);
     clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
     width: 90%;
     min-height: 60px;
     height: auto;
-    padding: 10px 20px;
+    padding: 5px 20px 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,7 +89,6 @@
     line-height: 1.2;
     margin: 0 auto;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 30%);
-
 }
 
 .team-content h3:before {
@@ -143,23 +143,18 @@
     clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
     color: #0c0c35;
     width: 80%;
-    /* Wider to accommodate long titles */
     min-height: 40px;
-    /* Flexible height for multiple lines */
     height: auto;
     border-radius: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 13px !important;
-    /* Forces override of inline styles */
     font-weight: 600;
     line-height: 1.4;
     letter-spacing: 0;
     margin: -10px auto 0 auto;
-    /* Centered perfectly */
     padding: 8px 15px !important;
-    /* Forces override of the huge inline 20px padding */
 }
 
 /* --- 6. Team Shape Animations --- */

@@ -525,7 +525,7 @@ a.venobox:focus {
 .cert-list,
 .priority-subtext {
     color: #b0b5d1;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
     font-weight: 400;
 }
@@ -699,9 +699,6 @@ a.venobox:focus {
 }
 
 .box-details {
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
     transition: all 0.4s ease-out;
 }
 

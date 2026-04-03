@@ -46,7 +46,7 @@ $(document).ready(function(){
                 },
                 // Laptops/Desktops (1024px and up)
                 1024: {
-                    slidesPerView: 4,
+                    slidesPerView: 3.5,
                 }
             }
         });
