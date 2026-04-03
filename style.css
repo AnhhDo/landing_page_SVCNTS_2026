@@ -1191,3 +1191,18 @@ a.menu-inline:focus {
   text-align: justify !important;
   margin-bottom: 0 !important;
 }
+
+a.venobox {
+  text-decoration: none !important;
+  color: inherit !important;
+  display: block;
+}
+
+a.venobox:visited,
+a.venobox:active,
+a.venobox:focus {
+  text-decoration: none !important;
+  color: inherit !important;
+  outline: none !important;
+  box-shadow: none !important;
+}

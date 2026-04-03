@@ -1,7 +1,16 @@
 function toggleDetails(element) {
   element.classList.toggle("active");
 }
-
+$(document).ready(function(){
+    $('.venobox').venobox({
+        numeratio: true,            // Adds "1/6" navigation
+        infinigall: true,           // Allows looping through items
+        share: false,               // Hides share buttons
+        spinner: 'cube-grid',       // Loading animation style
+        bgcolor: '#fff',            // Popup background color
+        overlayColor: 'rgba(0,0,0,0.85)' // Dimness of the background
+    });
+});
 (function ($) {
     "use strict";
 
@@ -49,7 +58,6 @@ function toggleDetails(element) {
             infinigall: false,
             spinner: 'plane',
         });
-
     });
 
 })(jQuery);
