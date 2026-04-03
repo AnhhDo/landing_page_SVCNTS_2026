@@ -1233,6 +1233,7 @@ select.custom-control option {
     /* Allows the stretch from swiper-wrapper to work */
     width: 100%;
     box-sizing: border-box;
+    margin: 32px;
 }
 
 /* Hover Effect for the card */
