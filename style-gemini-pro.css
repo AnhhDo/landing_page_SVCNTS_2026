@@ -1136,10 +1136,22 @@ select.custom-control option {
     }
 }
 
+.team-content h3 {
+    font-family: 'Oswald';
+}
+
+.team-content h4 {
+    font-family: 'Oswald';
+    font-size: 13px;
+    padding: 20px;
+    text-align: center;
+}
+
 @media screen and (max-width: 576px) {
-    .nganh-item h3{
+    .nganh-item h3 {
         font-size: 14px;
     }
+
     .nganh-item.right-align h3 {
         text-align: left !important;
     }
@@ -1172,12 +1184,15 @@ select.custom-control option {
 --------------------------------------- */
 .swiper-wrapper {
     display: flex;
-    align-items: stretch; /* Forces all cards to be the exact same height */
+    align-items: stretch;
+    /* Forces all cards to be the exact same height */
 }
 
 .testimonial-card {
-    background-color: rgba(6, 9, 43, 0.8); /* Deep transparent navy */
-    border: 1px solid rgba(0, 210, 255, 0.3); /* Base thin cyan border */
+    background-color: rgba(6, 9, 43, 0.8);
+    /* Deep transparent navy */
+    border: 1px solid rgba(0, 210, 255, 0.3);
+    /* Base thin cyan border */
     border-radius: 12px;
     padding: 40px 30px;
     text-align: center;
@@ -1189,7 +1204,8 @@ select.custom-control option {
     /* Flex properties to keep layout unified inside */
     display: flex;
     flex-direction: column;
-    height: auto; /* Allows the stretch from swiper-wrapper to work */
+    height: auto;
+    /* Allows the stretch from swiper-wrapper to work */
     width: 100%;
     box-sizing: border-box;
 }
@@ -1211,14 +1227,16 @@ select.custom-control option {
     position: absolute;
     width: 40px;
     height: 40px;
-    pointer-events: none; /* So it doesn't block clicks */
+    pointer-events: none;
+    /* So it doesn't block clicks */
     transition: all 0.3s ease;
 }
 
 .testimonial-card::before {
     top: -2px;
     left: -2px;
-    border-top: 4px solid #00d2ff; /* Cyan */
+    border-top: 4px solid #00d2ff;
+    /* Cyan */
     border-left: 4px solid #00d2ff;
     border-top-left-radius: 12px;
     box-shadow: -5px -5px 15px rgba(0, 210, 255, 0.4);
@@ -1227,7 +1245,8 @@ select.custom-control option {
 .testimonial-card::after {
     bottom: -2px;
     right: -2px;
-    border-bottom: 4px solid #d94dff; /* Purple/Pink */
+    border-bottom: 4px solid #d94dff;
+    /* Purple/Pink */
     border-right: 4px solid #d94dff;
     border-bottom-right-radius: 12px;
     box-shadow: 5px 5px 15px rgba(217, 77, 255, 0.4);
@@ -1260,7 +1279,8 @@ select.custom-control option {
 }
 
 .testimonial-header h4 {
-    color: #00d2ff; /* Cyan text to match the tech theme */
+    color: #00d2ff;
+    /* Cyan text to match the tech theme */
     font-size: 15px;
     font-weight: 600;
     line-height: 1.4;
@@ -1278,8 +1298,10 @@ select.custom-control option {
    BODY TEXT
 --------------------------------------- */
 .testimonial-body {
-    text-align: left; /* Keeps text left-aligned like layout 2 */
-    flex-grow: 1; /* Pushes the text to fill empty space, keeping everything aligned */
+    text-align: left;
+    /* Keeps text left-aligned like layout 2 */
+    flex-grow: 1;
+    /* Pushes the text to fill empty space, keeping everything aligned */
     border-top: 1px dashed rgba(255, 255, 255, 0.2);
     padding-top: 15px;
 }
