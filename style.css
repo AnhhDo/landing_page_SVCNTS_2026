@@ -1206,3 +1206,78 @@ a.venobox:focus {
   outline: none !important;
   box-shadow: none !important;
 }
+
+/* Card Container */
+.testimonial-card {
+    background-color: #06092b; /* Dark navy blue background */
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center; /* Centers the image and headings */
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Soft shadow for depth */
+
+    /* If you want the cards to have a specific width, uncomment below */
+    /* width: 100%; */
+    /* max-width: 500px; */
+}
+
+/* --------------------------------------
+   IMAGE WITH GRADIENT BORDER TRICK
+--------------------------------------- */
+.testimonial-header img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+
+    /* This creates the gradient border */
+    padding: 4px; /* Thickness of the border */
+    background: linear-gradient(135deg, #d94dff 0%, #00d2ff 100%); /* Purple/Pink to Cyan */
+
+    margin-bottom: 15px;
+}
+
+/* --------------------------------------
+   TYPOGRAPHY (Headings)
+--------------------------------------- */
+/* Name */
+.testimonial-header h2 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 800; /* Extra bold */
+    margin: 10px 0 5px 0;
+    letter-spacing: 0.5px;
+}
+
+/* Job Title */
+.testimonial-header h4 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0 0 5px 0;
+}
+
+/* Subtitle (Sinh viên công nghệ tập sự) */
+.testimonial-header h6 {
+    color: rgba(255, 255, 255, 0.6); /* Slightly faded so it doesn't distract from the title */
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+}
+
+/* --------------------------------------
+   BODY TEXT (Paragraphs)
+--------------------------------------- */
+.testimonial-body {
+    text-align: left; /* Keeps the paragraph text left-aligned like the image */
+    margin-top: 20px;
+}
+
+.testimonial-body p {
+    /* Using !important to override the inline styles in your HTML */
+    color: #c9cdd8 !important; /* Slightly off-white/gray for better readability on dark backgrounds */
+    font-size: 15px !important;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
