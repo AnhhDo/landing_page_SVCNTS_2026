@@ -61,6 +61,8 @@
 /* --- 5. Team Item / Content Styles --- */
 .team-item {
     cursor: pointer;
+    width: 100%;
+    justify-self: center;
 }
 
 .team-content {
@@ -88,10 +90,7 @@
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 30%);
 
 }
-div.team-content h3 a {
-    text-decoration: none !important;
-    color: inherit;
-}
+
 .team-content h3:before {
     background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 1px, transparent 6px);
     background-size: 4px 4px;
@@ -99,7 +98,7 @@ div.team-content h3 a {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
 
@@ -143,7 +142,7 @@ div.team-content h3 a {
     background-color: #ddd;
     clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
     color: #0c0c35;
-    width: 85%;
+    width: 80%;
     /* Wider to accommodate long titles */
     min-height: 40px;
     /* Flexible height for multiple lines */
@@ -161,11 +160,6 @@ div.team-content h3 a {
     /* Centered perfectly */
     padding: 8px 15px !important;
     /* Forces override of the huge inline 20px padding */
-}
-
-.team-content h3 a {
-    color: #fff;
-    z-index: 1;
 }
 
 /* --- 6. Team Shape Animations --- */
@@ -198,7 +192,7 @@ div.team-content h3 a {
     background: #FCB813;
     background-image: linear-gradient(to right bottom, #FCB813, #e027ff, #c534ff, #a93eff, #8a44ff, #6560ff, #3c73ff, #0081ff, #009cff, #00b3ff, #00c6f5, #0cd7e8);
     clip-path: polygon(0% 0%, 80% 0, 100% 10%, 100% 100%, 0 100%);
-    width: 150px;
+    width: 100px;
     height: 100%;
     position: absolute;
     left: 0;
@@ -249,7 +243,6 @@ div.team-content h3 a {
 .team-thumb .shape.shape-5 {
     height: 75%;
     left: 50%;
-    width: 120px;
     z-index: 0;
     opacity: 0.5;
 }
@@ -257,7 +250,7 @@ div.team-content h3 a {
 .team-thumb .shape.shape-6 {
     height: 35%;
     left: 70%;
-    width: 100px;
+    width: 30%;
     z-index: 1;
     opacity: 0.7;
 }

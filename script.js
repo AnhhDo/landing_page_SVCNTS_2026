@@ -10,7 +10,7 @@ function toggleDetails(element) {
         // 1. Team Carousel Initialization (Swiper.js)
         var swiperTeam = new Swiper(".team-carousel", {
             slidesPerView: 4,
-            spaceBetween: 60,
+            spaceBetween: 40,
             slidesPerGroup: 1,
             loop: true,       // Infinite looping
             autoplay: {
@@ -37,7 +37,7 @@ function toggleDetails(element) {
                 },
                 // Laptops/Desktops (1024px and up)
                 1024: {
-                    slidesPerView: 3,
+                    slidesPerView: 4,
                 }
             }
         });

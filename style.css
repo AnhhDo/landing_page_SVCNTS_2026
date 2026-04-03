@@ -169,6 +169,17 @@ body {
     box-shadow: 0 0 10px rgba(224, 39, 255, 0.6);
 }
 
+.small-title{
+    font-family: 'Black Ops One', cursive;
+    font-size: 36px;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
 .title-underline {
     height: 4px;
     width: 120px;
