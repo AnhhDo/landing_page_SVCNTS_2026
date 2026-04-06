@@ -278,14 +278,12 @@ a.venobox:focus {
    ========================================= */
 .hero-section {
     flex: 1 1 auto;
-
     /* Make this a flex container too, so the banner inside can stretch */
     display: flex;
     flex-direction: column;
 }
 .banner{
     flex: 1; /* Stretches the banner to fill the new section height */
-
     /* (Keep your previous flexbox rules here for the 2-column layout) */
     display: flex;
     justify-content: space-between;
@@ -1119,6 +1117,17 @@ select.custom-control option {
 }
 
 @media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px; /* Adds space between the top and bottom image */
+    }
+
+    /* 2. Make the images take up more width since they are stacked */
+    .column-img {
+        width: 80%;
+        max-width: 400px; /* Prevents them from getting too massive */
+    }
     .nganh-grid {
         grid-template-columns: 1fr;
     }
@@ -1133,6 +1142,10 @@ select.custom-control option {
         border-left: 4px solid #e027ff;
         border-right: none;
         clip-path: polygon(15px 0, 100% 0, 100% 100%, 15px 100%, 0 calc(100% - 15px), 0 15px);
+    }
+    .nganh-item img{
+        width: 60px;
+        height: auto;
     }
 
     .nganh-item.right-align img {
@@ -1181,6 +1194,34 @@ select.custom-control option {
 
     .timeline-item.left .timeline-box {
         margin-left: 0;
+    }
+
+    /* 1. Standardize padding for all major background-image sections */
+    .nhom-nganh-section,
+    .quyen_loi,
+    .quy_trinh,
+    .registration-section {
+        padding: 50px 0 !important;
+    }
+
+    /* 2. Đối tượng section needs to keep its side padding, so we target it separately */
+    .doi_tuong {
+        padding: 50px 5% !important;
+    }
+
+    /* 3. Team sections use margins, so we normalize those to 50px as well */
+    .team-section {
+        margin-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+
+    /* Optional: tighten up the section headings so they don't push content too far down */
+    .section-heading {
+        margin-bottom: 30px !important;
+    }
+
+    .section-gap {
+        margin-bottom: 50px !important;
     }
 }
 
@@ -1255,10 +1296,8 @@ select.custom-control option {
     /* Flex properties to keep layout unified inside */
     display: flex;
     flex-direction: column;
-    height: auto;
     /* Allows the stretch from swiper-wrapper to work */
-    width: 100%;
-    box-sizing: border-box;
+
     background-color: rgba(6, 9, 43, 0.8);
     border: 1px solid rgba(0, 210, 255, 0.3);
     border-radius: 12px;
@@ -1270,12 +1309,10 @@ select.custom-control option {
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    height: auto;
     width: 100%;
+    height: 100%; /* Stretches the card so the corners sit perfectly at the bottom */
     box-sizing: border-box;
-
-    /* CHANGE THIS LINE: */
-    margin: 20px auto; /* Allows it to center inside the slide without blowing out the width */
+    margin: 0; /* CRITICAL: Removes the margin so it doesn't overlap other cards */
 }
 
 /* Hover Effect for the card */
@@ -1284,7 +1321,12 @@ select.custom-control option {
     transform: translateY(-5px);
     border-color: rgba(0, 210, 255, 0.6);
 }
-
+/* Creates safe spacing between the Alumni cards without breaking Swiper */
+#alumni .swiper-slide {
+    padding: 20px;
+    height: auto; /* Ensures all slides stretch to match the tallest card */
+    box-sizing: border-box;
+}
 /* --------------------------------------
    FANCIER TECH BORDERS (Sci-Fi Corners)
 --------------------------------------- */
@@ -1444,4 +1486,64 @@ select.custom-control option {
         width: 25px;
         height: 25px;
     }
+}
+
+/* Base style for the button (Hidden on Desktop) */
+.mobile-menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 28px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.mobile-menu-btn:hover {
+    color: var(--cyan-glow);
+}
+
+/* Update your existing 992px media query */
+@media screen and (max-width: 992px) {
+    .custom-header .primary-header-inner {
+        flex-direction: row; /* Keep logo and button on the same line */
+        justify-content: space-between;
+        flex-wrap: wrap; /* Allows menu to drop below */
+    }
+
+    .mobile-menu-btn {
+        display: block; /* Show the hamburger menu */
+    }
+
+    .header-menu-wrap {
+        display: none; /* Hide the menu by default */
+        width: 100%;
+        background-color: var(--bg-dark-blue);
+        padding-bottom: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        margin-top: 15px;
+    }
+
+    /* This class will be toggled by Javascript to show the menu */
+    .header-menu-wrap.active {
+        display: block;
+        animation: fadeIn 0.3s ease;
+    }
+
+    .custom-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .custom-nav li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+}
+
+/* Smooth fade-in animation for the menu */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }

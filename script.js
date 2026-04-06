@@ -61,3 +61,36 @@ $(document).ready(function(){
     });
 
 })(jQuery);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const mobileBtn = document.querySelector('.mobile-menu-btn');
+    const menuWrap = document.querySelector('.header-menu-wrap');
+
+    if (mobileBtn && menuWrap) {
+        mobileBtn.addEventListener('click', function() {
+            // Toggles the 'active' class on and off
+            menuWrap.classList.toggle('active');
+
+            // Optional: Change the icon from hamburger (bars) to close (x)
+            const icon = mobileBtn.querySelector('i');
+            if (menuWrap.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+    }
+
+    // Optional: Close the menu automatically when a link is clicked
+    const navLinks = document.querySelectorAll('.custom-nav a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            menuWrap.classList.remove('active');
+            const icon = mobileBtn.querySelector('i');
+            icon.classList.remove('fa-xmark');
+            icon.classList.add('fa-bars');
+        });
+    });
+});
