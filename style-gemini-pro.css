@@ -175,8 +175,7 @@ a.venobox:focus {
 .screen-height-wrapper {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    overflow: hidden;
+    height: 100vh;
 }
 
 .custom-header {
@@ -186,6 +185,7 @@ a.venobox:focus {
     position: sticky;
     top: 0;
     z-index: 100;
+    flex: 0 0 auto;
 }
 
 .custom-header .primary-header-inner {
@@ -277,6 +277,32 @@ a.venobox:focus {
    HERO SECTION
    ========================================= */
 .hero-section {
+    flex: 1 1 auto;
+
+    /* Make this a flex container too, so the banner inside can stretch */
+    display: flex;
+    flex-direction: column;
+}
+.banner{
+    flex: 1; /* Stretches the banner to fill the new section height */
+
+    /* (Keep your previous flexbox rules here for the 2-column layout) */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('assets/nen 1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.column-img {
+    width: 48%;     /* Each image takes up slightly less than half the banner */
+    max-width: 100%;
+    height: auto;   /* Crucial: ensures the images maintain their original aspect ratio as they shrink/grow */
+}
+/* .hero-section {
     padding: 0;
     margin: 0;
     height: 90vh;
@@ -300,15 +326,15 @@ a.venobox:focus {
     object-fit: contain;
     object-position: top;
     display: block;
-}
+} */
 
 /* =========================================
    NHÓM NGÀNH SECTION
    ========================================= */
 .nhom-nganh-section {
     background-image: url('assets/background/vi_tri.png');
-    background-size: cover;
-    background-position: top;
+    background-size: center;
+    background-position: center;
     position: relative;
     padding: 100px 0;
 }
