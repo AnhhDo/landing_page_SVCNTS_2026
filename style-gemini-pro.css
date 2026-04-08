@@ -1323,7 +1323,7 @@ select.custom-control option {
 }
 /* Creates safe spacing between the Alumni cards without breaking Swiper */
 #alumni .swiper-slide {
-    padding: 20px;
+    padding: 10px;
     height: auto; /* Ensures all slides stretch to match the tallest card */
     box-sizing: border-box;
 }
