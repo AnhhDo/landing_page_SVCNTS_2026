@@ -174,10 +174,10 @@
 
       <ul class="main-list">
         <li>Sinh viên năm 3 hoặc năm cuối đang theo học các ngành Công nghệ Thông tin, Điện tử Viễn thông</li>
-        <li>Có khả năng làm việc tại Hà Nội hoặc TP. Hồ Chí Minh.</li>
+        <li>Có khả năng làm việc tại Hà Nội hoặc TP. Hồ Chí Minh</li>
         <li>GPA từ 7.0/10 hoặc 2.8/4.0 trở lên</li>
-        <li>Ưu tiên ứng viên có/đang học các chứng chỉ chuyên môn phù hợp với lĩnh vực. </li>
-        <li>Định hướng phát triển trong Lập trình, Bảo mật, Hệ thống hoặc các mảng công nghệ liên quan.</li>
+        <li>Ưu tiên ứng viên có/đang học các chứng chỉ chuyên môn phù hợp với lĩnh vực</li>
+        <li>Định hướng phát triển trong Lập trình, Bảo mật, Hệ thống hoặc các mảng công nghệ liên quan</li>
         <li>Tham gia các hoạt động xã hội, cộng đồng là một lợi thế</li>
       </ul>
     </div>
@@ -686,11 +686,51 @@
                 <label class="form-label">Vị trí ứng tuyển *</label>
                 <select class="custom-control form-select" required>
                   <option value="">Chọn vị trí</option>
-                  <option value="dev">Lập trình</option>
-                  <option value="network">Mạng & Viễn thông</option>
-                  <option value="security">Bảo mật</option>
-                  <option value="data">Data & AI</option>
-                  <option value="system">Hệ thống</option>
+                  <optgroup label="VIỄN THÔNG">
+                    <option value="vt_tts_cntt">Thực tập sinh CNTT vô tuyến</option>
+                    <option value="vt_network_eng">Network Engineer</option>
+                    <option value="vt_tts_pt_network">TTS Phân tích & đánh giá hệ thống Network</option>
+                    <option value="vt_van_hanh">Vận hành Hệ Thống Mạng</option>
+                    <option value="vt_voip_eng">VoIP Engineer</option>
+                    <option value="vt_wireless_intern">Wireless Network R&D Intern</option>
+                    <option value="vt_broadband_intern">Broadband Network Engineering Intern</option>
+                  </optgroup>
+
+                  <optgroup label="CÔNG NGHỆ THÔNG TIN">
+                    <option value="it_backend_intern">Backend Intern (Java, Python, NodeJS, C++..)</option>
+                    <option value="it_fullstack_intern">Fullstack Intern</option>
+                    <option value="it_ba">Business Analyst</option>
+                  </optgroup>
+
+                  <optgroup label="DỮ LIỆU VÀ AI">
+                    <option value="ai_engineer_intern">AI Engineer Intern (Algorithm & Agent)</option>
+                    <option value="ai_integration_intern">Full-stack AI Integration Intern (System & App)</option>
+                    <option value="ai_dba">DBA (Database Administrator)</option>
+                    <option value="ai_data_analyst">Data Analyst</option>
+                    <option value="ai_data_engineering">Data Engineering</option>
+                    <option value="ai_data_scientist">Data Scientist</option>
+                    <option value="ai_tts_du_lieu">TTS Dữ liệu và Tự động hóa Mạng</option>
+                  </optgroup>
+
+                  <optgroup label="AN TOÀN THÔNG TIN">
+                    <option value="sec_ks_bao_mat">Kỹ sư bảo mật ứng dụng</option>
+                    <option value="sec_nv_van_hanh">Nhân viên vận hành dịch vụ bảo mật</option>
+                  </optgroup>
+
+                  <optgroup label="ĐIỆN VÀ CƠ ĐIỆN TỰ ĐỘNG HÓA">
+                    <option value="elec_ky_thuat_dien">Kỹ thuật Điện</option>
+                    <option value="elec_ky_thuat_nhiet">Kỹ thuật Nhiệt</option>
+                    <option value="elec_tts_tu_dong_hoa">TTS công nghệ Tự động hoá</option>
+                    <option value="elec_van_hanh_dc">Trực vận hành hệ thống Data Center</option>
+                  </optgroup>
+
+                  <optgroup label="THIẾT KẾ VI MẠCH VÀ PHẦN CỨNG">
+                    <option value="hw_ic_rtl_intern">Ic Design Intern (Rtl & Logic Design)</option>
+                    <option value="hw_ic_verification_intern">Ic Verification Intern</option>
+                    <option value="hw_physical_design_intern">Physical Design Intern</option>
+                    <option value="hw_embedded_intern">Embedded Software Intern</option>
+                    <option value="hw_hardware_design_intern">Hardware Design Intern (Pcb & System Board)</option>
+                  </optgroup>
                 </select>
               </div>
 
@@ -748,32 +788,212 @@
   <div style="display: none;">
     <div id="content-vien-thong" class="custom-expert-popup">
       <div class="popup-body">
-        <p>content</p>
+        <h3 class="box-title"><span class="text-gradient">VIỄN THÔNG</span></h3>
+        <p>Nơi bạn được tham gia vào những dự án trọng điểm trong xây dựng và vận hành hạ tầng cấp quang tiên tiến
+          nhất, phủ sóng rộng khắp đảm bảo ứng dụng cho các dịch vụ viễn thông thông minh</p>
+        <div class="two-columns">
+          <div class="venobox-columns">
+            <div class="header-box">
+              <h4>Vị trí</h4>
+            </div>
+            <ul class="dash-list position-list">
+              <li>Công nghệ Thông tin Vô tuyến</li>
+              <li>Network Engineering</li>
+              <li>Phân tích & Đánh giá Hệ thống Network</li>
+              <li>Vận hành Hệ thống Mạng</li>
+              <li>VoIP Engineering</li>
+              <li>Wireless Network R&D</li>
+              <li>Broadband Network Engineering</li>
+            </ul>
+          </div>
+
+          <div class="venobox-columns">
+            <div class="header-box">
+              <h4>Yêu cầu</h4>
+            </div>
+            <ul class="dash-list">
+              <li>Có kiến thức về Network: Thiết bị (DSLAM, Router, switch...), hoặc công nghệ VoIP: SIP, PBX,
+                Conference, hệ thống Asterisk / routing, switching...</li>
+              <li>Có kiến thức/chứng chỉ CCNA và VoIP hoặc System Linux</li>
+              <li>Ưu tiên ứng viên có hiểu biết về lập trình cơ bản</li>
+              <li>Tiếng Anh giao tiếp & chuyên ngành cơ bản</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <div id="content-dien" class="custom-expert-popup">
       <div class="popup-body">
-        <p>content</p>
+        <h3 class="box-title"><span class="text-gradient">ĐIỆN VÀ CƠ ĐIỆN TỰ ĐỘNG HÓA</span></h3>
+        <p>Bạn sẽ được làm việc tại hệ thống Data Center hiện đại nhất Đông Nam Á cùng mạng lưới hạ tầng trải dài trên
+          toàn tỉnh, thông qua việc xây dựng và vận hành hệ thống điện, cơ điện, điện động nghiệp, đảm bảo an toàn và
+          hiệu quả cho các cơ sở hạ tầng quan trọng</p>
+        <div class="two-columns">
+          <div class="venobox-columns">
+            <div class="header-box">
+              <h4>Vị trí</h4>
+            </div>
+            <ul class="dash-list">
+              <li>Kỹ thuật Điện</li>
+              <li>Kỹ thuật Nhiệt</li>
+              <li>Công nghệ Tự động hoá</li>
+              <li>Trực vận hành hệ thống Data Center</li>
+            </ul>
+          </div>
+
+          <div class="venobox-columns">
+            <div class="header-box">
+              <h4>Yêu cầu</h4>
+            </div>
+            <ul class="dash-list">
+              <li>Sinh viên năm 3, năm cuối chuyên ngành: Điện, Cơ điện, Tự động hóa</li>
+              <li>Hiểu biết về xây dựng, triển khai đấu nối cấp điện hạ thế</li>
+              <li>Thành thạo Microsoft Office (Word, Excel, AutoCAD, …)</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <div id="content-cntt" class="custom-expert-popup">
       <div class="popup-body">
-        <p>content</p>
+        <h3 class="box-title"><span class="text-gradient">CÔNG NGHỆ THÔNG TIN</span></h3>
+        <p>Cơ hội trực tiếp tham gia vào các dự án ứng dụng công nghệ mới như Developer, Cloud, DevOps, AI… dưới sự
+          hướng dẫn của các chuyên gia công nghệ hàng đầu</p>
+
+        <div class="two-columns">
+          <div class="venobox-columns">
+            <div class="header-box">
+              <h4>Vị trí</h4>
+            </div>
+
+            <ul class="dash-list"></ul>
+            <li>Backend (Java, Python, NodeJS, C++..)</li>
+            <li>Fullstack</li>
+            <li>Business Analyst</li>
+            </ul>
+          </div>
+
+          <div class="venobox-columns">
+            <div class="header-box">
+              <h4>Yêu cầu</h4>
+            </div>
+            <ul class="dash-list">
+              <li>Có kiến thức/kinh nghiệm về 1 trong các ngôn ngữ lập trình/lĩnh vực sau: C#/Net, Java, C++,
+                C/Embedded,
+                Mobile (Android/iOS), Python, Angular/ReactJS, NodeJS,…</li>
+              <li>Ưu tiên SV đã đạt giải trong các cuộc thi học thuật về: lập trình, công nghệ, Olympic Tin học
+                ACM/ICPC,
+                Học sinh Giỏi quốc gia, tham gia đề tài nghiên cứu khoa học cấp trường trở lên</li>
+              <li>Tiếng Anh giao tiếp & chuyên ngành tốt</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <div id="content-attt" class="custom-expert-popup">
       <div class="popup-body">
-        <p>content</p>
+        <h3 class="box-title"><span class="text-gradient">AN TOÀN THÔNG TIN</span></h3>
+        <p>Tham gia vào đội ngũ chuyên gia bảo mật hàng đầu để triển khai các giải pháp bảo mật An ninh mạng, thực thi
+          hệ
+          thống Cybersecurity chuyên nghiệp bảo vệ mạng lưới viễn thông và dữ liệu khách hàng</p>
+        <div class="two-columns">
+          <div class="venobox-columns">
+            <div class="header-box">
+              <h4>Vị trí</h4>
+            </div>
+            <ul class="dash-list">
+              <li>Kỹ sư bảo mật ứng dụng</li>
+              <li>Nhân viên vận hành dịch vụ bảo mật</li>
+            </ul>
+          </div>
+
+          <div class="venobox-columns">
+            <div class="header-box">
+              <h4>Yêu cầu</h4>
+            </div>
+            <ul class="dash-list">
+              <li>Sinh viên năm 3 hoặc năm cuối học chuyên ngành An toàn thông tin, CNTT</li>
+              <li>Có kiến thức về đánh giá, kiểm thử ATTT: OWASP, NIST, OSSTMM</li>
+              <li>Hiểu rõ điểm yếu, lỗ hổng ATTT, lập trình, hệ điều hành, Networking, ứng dụng và giao thức phổ biến
+              </li>
+              <li>Có kiến thức thực hành an ninh mạng về: IT risk management, IT audit, security operation, security
+                engineering, pen testing, …</li>\
+              <li>Tiếng Anh chuyên ngành và giao tiếp tốt</li>
+              <li>Ưu tiên từng tham gia CTF, ACM/ICPC, bug bounty</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <div id="content-ai" class="custom-expert-popup">
       <div class="popup-body">
-        <p>content</p>
+        <h3 class="box-title"><span class="text-gradient">DỮ LIỆU VÀ AI</span></h3>
+        <p>Là nơi bạn được tự do sáng tạo, thể hiện tài năng trong việc phát triển những sản phẩm và dịch vụ thông minh
+          như: FPT Camera, ứng dụng AI trong Customer Service, Marketing, FPT Life và Network Optimization dưới sự dẫn
+          dắt
+          của các chuyên gia AI đầu ngành</p>
+        <div class="two-columns">
+          <div class="venobox-columns">
+            <div class="header-box">
+              <h4>Vị trí</h4>
+            </div>
+            <ul class="dash-list">
+              <li>AI Engineer (Algorithm & Agent)</li>
+              <li>Full-stack AI Integration (System & App)</li>
+              <li>DBA (Database Administrator)</li>
+              <li>Data Analyst</li>
+              <li>Data Engineering</li>
+              <li>Data Scientist</li>
+              <li>Dữ liệu và Tự động hóa Mạng</li>
+            </ul>
+          </div>
+
+          <div class="venobox-columns">
+            <div class="header-box">
+              <h4>Yêu cầu</h4>
+            </div>
+            <ul class="dash-list">
+              <li>Sinh viên chuyên ngành CNTT hoặc liên quan Trí tuệ nhân tạo</li>
+              <li>Kiến thức nền tảng tốt về Toán cao cấp, Xác suất thống kê, Thuật toán học máy, Học sâu cơ bản</li>
+              <li>Kinh nghiệm tham gia các hoạt động Nghiên cứu khoa học học là lợi thế</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <div id="content-thiet-ke" class="custom-expert-popup">
       <div class="popup-body">
-        <p>content</p>
+        <h3 class="box-title"><span class="text-gradient">THIẾT KẾ VI MẠCH VÀ PHẦN CỨNG</span></h3>
+        <p>Bạn sẽ được tham gia vào các dự án thiết kế và phát triển vi mạch, hệ thống phần cứng hiện đại, góp phần xây
+          dựng các sản phẩm công nghệ lõi như AI Chip, IoT, Smart Devices… thông qua việc nghiên cứu, thiết kế, kiểm thử
+          và tối ưu hiệu năng hệ thống phần cứng</p>
+        <div class="two-columns">
+          <div class="venobox-columns">
+            <div class="header-box">
+              <h4>Vị trí</h4>
+            </div>
+            <ul class="dash-list">
+              <li>Ic Design (Rtl & Logic Design)</li>
+              <li>Ic Verification</li>
+              <li>Physical Design</li>
+              <li>Embedded Software</li>
+              <li>Hardware Design (Pcb & System Board)</li>
+            </ul>
+          </div>
+
+          <div class="venobox-columns">
+            <div class="header-box">
+              <h4>Yêu cầu</h4>
+            </div>
+            <ul class="dash-list">
+              <li>Sinh viên năm 3, năm cuối chuyên ngành: Điện tử, Viễn thông, Kỹ thuật máy tính, Thiết kế vi mạch</li>
+              <li>Hiểu biết về thiết kế mạch số/tương tự, kiến trúc máy tính, FPGA/ASIC</li>
+              <li>Có kiến thức về HDL (Verilog/VHDL), Embedded System hoặc Firmware là lợi thế</li>
+              <li>Thành thạo các công cụ thiết kế: Cadence, Synopsys, Altium, MATLAB hoặc tương đương</li>
+              <li>Có tư duy logic tốt, khả năng phân tích và tối ưu hệ thống</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 

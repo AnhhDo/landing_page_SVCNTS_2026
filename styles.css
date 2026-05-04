@@ -1548,3 +1548,71 @@ select.custom-control option {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+.custom-expert-popup {
+  background-color: #030324;
+  background-image: linear-gradient(135deg, rgba(3,3,36,1) 0%, rgba(13,13,71,1) 100%);
+  color: #fff;
+  font-family: sans-serif;
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #00c8ff;
+  box-shadow: 0 0 20px rgba(0,200,255,0.3);
+}
+
+.custom-expert-popup h3.box-title {
+  text-align: center;
+  color: #00e5ff;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.two-columns {
+  display: flex;
+  gap: 30px;
+}
+
+.venobox-columns {
+  flex: 1;
+}
+
+.header-box h4 {
+  background-color: #fff;
+  color: #1a1aff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 15px 15px 0;
+  font-weight: bold;
+}
+
+/* Specific styling to match the image's layout */
+.col-info-wrapper {
+  color: #fff;
+}
+
+.intro-text {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+ul.dash-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.dash-list li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  text-align: left;
+}
+
+ul.dash-list li:before {
+  content: "-";
+  position: absolute;
+  left: 0;
+}
