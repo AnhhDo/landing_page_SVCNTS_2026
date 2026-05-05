@@ -33,6 +33,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100%;
+    overflow-x: hidden;
     background-image: url('assets/BACKGGROUND\ \(1\).png');
     background-size: cover;
     background-position: center;
@@ -279,17 +280,15 @@ a.venobox:focus {
    ========================================= */
 .hero-section {
     flex: 1 1 auto;
-    /* Make this a flex container too, so the banner inside can stretch */
     display: flex;
     flex-direction: column;
 }
 .banner{
-    flex: 1; /* Stretches the banner to fill the new section height */
-    /* (Keep your previous flexbox rules here for the 2-column layout) */
+    flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url('assets/nen 1.png');
+    background-image: url('assets/background 1600x900.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -297,42 +296,17 @@ a.venobox:focus {
 }
 
 .column-img {
-    width: 48%;     /* Each image takes up slightly less than half the banner */
-    max-width: 100%;
-    height: auto;   /* Crucial: ensures the images maintain their original aspect ratio as they shrink/grow */
+    width: 48%;
+    max-width: 70%;
+    height: auto;
 }
-/* .hero-section {
-    padding: 0;
-    margin: 0;
-    height: 90vh;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    width: auto;
-}
-
-.full-width-banner {
-    width: auto;
-    height: 100%;
-    flex-grow: 1;
-    padding-top: 0px;
-    overflow: hidden;
-}
-
-.full-width-banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: top;
-    display: block;
-} */
 
 /* =========================================
    NHÓM NGÀNH SECTION
    ========================================= */
 .nhom-nganh-section {
     background-image: url('assets/background/vi_tri.png');
-    background-size: center;
+    background-size: cover;
     background-position: center;
     position: relative;
     padding: 100px 0;
@@ -440,7 +414,7 @@ a.venobox:focus {
     background-size: cover;
     background-position: center;
     position: relative;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .quyen-loi-grid {
@@ -449,14 +423,14 @@ a.venobox:focus {
     justify-content: center;
     gap: 40px;
     max-width: 1100px;
-    margin: 80px auto 0 auto;
+    margin: 50px auto 0 auto;
 }
 
 .quyen-loi-card {
     background: linear-gradient(180deg, rgba(35, 15, 105, 0.8) 0%, rgba(20, 10, 60, 0.9) 100%);
     border: 1px solid rgba(169, 62, 255, 0.3);
     border-radius: 20px;
-    padding: 70px 25px 30px 25px;
+    padding: 50px 25px 30px 25px;
     text-align: center;
     position: relative;
     width: calc(33.333% - 27px);
@@ -476,8 +450,8 @@ a.venobox:focus {
     top: -55px;
     left: 50%;
     transform: translateX(-50%);
-    width: 110px;
-    height: 110px;
+    width: 100%;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -495,7 +469,7 @@ a.venobox:focus {
     font-size: 20px;
     line-height: 1.4;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .quyen-loi-card h4 .highlight-text {
@@ -535,7 +509,7 @@ a.venobox:focus {
     display: flex;
     justify-content: flex-end;
     padding-right: 5%;
-    min-width: 300px;
+    min-width: 0;
 }
 
 .content-right img {
@@ -632,7 +606,7 @@ a.venobox:focus {
 .timeline-item {
     position: relative;
     width: 50%;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .timeline-item.left {
@@ -690,7 +664,7 @@ a.venobox:focus {
     position: relative;
     background: linear-gradient(135deg, rgba(77, 166, 255, 0.8), rgba(217, 77, 255, 0.8));
     border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -718,7 +692,7 @@ a.venobox:focus {
     color: #ffffff;
     font-family: 'Black Ops One', cursive;
     font-size: 20px;
-    margin: 10px 0;
+    margin: 8px 0;
     letter-spacing: 1px;
     text-align: center;
 }
@@ -728,7 +702,7 @@ a.venobox:focus {
 }
 
 .timeline-box.active .box-details {
-    max-height: 500px;
+    max-height: 400px;
     opacity: 1;
     margin-top: 15px;
     padding-top: 15px;
@@ -744,7 +718,7 @@ a.venobox:focus {
 .box-details p {
     font-size: 0.95rem;
     line-height: 1.3;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     color: white;
 }
 
@@ -775,7 +749,7 @@ a.venobox:focus {
 }
 
 .registration-card {
-    background-image: url('assets/form.png');
+    background-image: url('assets/Frame 113.png');
     border-radius: 3rem;
     padding: 2.5rem 1.5rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
@@ -1094,20 +1068,6 @@ select.custom-control option {
 }
 
 @media screen and (max-width: 992px) {
-
-    /* Stack logo and nav vertically on tablets */
-    .custom-header .primary-header-inner {
-        flex-direction: column;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .custom-nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
     .quyen-loi-card {
         width: calc(50% - 20px);
     }
@@ -1115,19 +1075,23 @@ select.custom-control option {
     .timeline-item.left .timeline-box {
         margin-left: 0
     }
+
+    .testimonial-card {
+        margin: 20px 15px;
+        padding: 30px 20px;
+    }
 }
 
 @media (max-width: 768px) {
     .banner {
         flex-direction: column;
         justify-content: center;
-        gap: 30px; /* Adds space between the top and bottom image */
+        gap: 30px;
     }
 
-    /* 2. Make the images take up more width since they are stacked */
     .column-img {
         width: 80%;
-        max-width: 400px; /* Prevents them from getting too massive */
+        max-width: 400px;
     }
     .nganh-grid {
         grid-template-columns: 1fr;
@@ -1208,9 +1172,27 @@ select.custom-control option {
     /* 2. Đối tượng section needs to keep its side padding, so we target it separately */
     .doi_tuong {
         padding: 50px 5% !important;
+        flex-direction: column;
     }
 
-    /* 3. Team sections use margins, so we normalize those to 50px as well */
+    /* 3. Fix content-left and content-right stacking on mobile */
+    .content-left {
+        max-width: 100%;
+        margin: 0;
+        width: 100%;
+    }
+
+    .content-right {
+        justify-content: center;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .content-right img {
+        max-height: 50vh;
+    }
+
+    /* 4. Team sections use margins, so we normalize those to 50px as well */
     .team-section {
         margin-top: 50px !important;
         padding-bottom: 50px !important;
@@ -1223,6 +1205,17 @@ select.custom-control option {
 
     .section-gap {
         margin-bottom: 50px !important;
+    }
+
+    .testimonial-card {
+        margin: 15px 10px;
+        padding: 25px 15px;
+    }
+
+    .testimonial-header img {
+        width: 110px;
+        height: 110px;
+        margin-bottom: 15px;
     }
 }
 
@@ -1424,29 +1417,7 @@ select.custom-control option {
     margin: 0;
 }
 
-@media screen and (max-width: 992px) {
-    /* ... your existing 992px rules ... */
 
-    .testimonial-card {
-        margin: 20px 15px;
-        padding: 30px 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    /* ... your existing 768px rules ... */
-
-    .testimonial-card {
-        margin: 15px 10px;
-        padding: 25px 15px;
-    }
-
-    .testimonial-header img {
-        width: 110px;
-        height: 110px;
-        margin-bottom: 15px;
-    }
-}
 
 @media screen and (max-width: 576px) {
     /* ... your existing 576px rules ... */
@@ -1504,20 +1475,19 @@ select.custom-control option {
     color: var(--cyan-glow);
 }
 
-/* Update your existing 992px media query */
 @media screen and (max-width: 992px) {
     .custom-header .primary-header-inner {
-        flex-direction: row; /* Keep logo and button on the same line */
+        flex-direction: row;
         justify-content: space-between;
-        flex-wrap: wrap; /* Allows menu to drop below */
+        flex-wrap: wrap;
     }
 
     .mobile-menu-btn {
-        display: block; /* Show the hamburger menu */
+        display: block;
     }
 
     .header-menu-wrap {
-        display: none; /* Hide the menu by default */
+        display: none;
         width: 100%;
         background-color: var(--bg-dark-blue);
         padding-bottom: 20px;
@@ -1525,7 +1495,6 @@ select.custom-control option {
         margin-top: 15px;
     }
 
-    /* This class will be toggled by Javascript to show the menu */
     .header-menu-wrap.active {
         display: block;
         animation: fadeIn 0.3s ease;
