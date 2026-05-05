@@ -177,7 +177,6 @@
         <li>Có khả năng làm việc tại Hà Nội hoặc TP. Hồ Chí Minh</li>
         <li>GPA từ 7.0/10 hoặc 2.8/4.0 trở lên</li>
         <li>Ưu tiên ứng viên có/đang học các chứng chỉ chuyên môn phù hợp với lĩnh vực</li>
-        <li>Định hướng phát triển trong Lập trình, Bảo mật, Hệ thống hoặc các mảng công nghệ liên quan</li>
         <li>Tham gia các hoạt động xã hội, cộng đồng là một lợi thế</li>
       </ul>
     </div>
@@ -1809,6 +1808,15 @@
 
   <script src="script.js"></script>
   <script>
+     document.addEventListener('click', function(e) {
+      var h4 = e.target.closest('.popup-body h4');
+      if (!h4) return;
+      var content = h4.nextElementSibling;
+      if (content && content.classList.contains('two-columns')) {
+        var isOpen = h4.classList.toggle('open');
+        content.classList.toggle('open', isOpen);
+      }
+    });
     const menuBtn = document.querySelector('.mobile-menu-btn');
     const menuWrap = document.querySelector('.header-menu-wrap');
     if (menuBtn && menuWrap) {
