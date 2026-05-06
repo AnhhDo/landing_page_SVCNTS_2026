@@ -301,6 +301,11 @@ a.venobox:focus {
     height: auto;
 }
 
+.left-column-img {
+    width: 38%;
+    max-width: 60%;
+    height: auto;
+}
 /* =========================================
    NHÓM NGÀNH SECTION
    ========================================= */
@@ -1092,6 +1097,10 @@ select.custom-control option {
     .column-img {
         width: 80%;
         max-width: 400px;
+    }
+    .left-column-img{
+        width: 70%;
+        max-width: 380px;
     }
     .nganh-grid {
         grid-template-columns: 1fr;
