@@ -1274,6 +1274,12 @@ select.custom-control option {
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .left-column-img {
+        transform: translateX(80px); /* adjust this value to taste */
+    }
+}
+
 /* --------------------------------------
    CARD CONTAINER (Fixing the width/height)
 --------------------------------------- */
